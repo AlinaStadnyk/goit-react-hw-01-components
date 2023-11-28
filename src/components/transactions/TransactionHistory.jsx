@@ -5,11 +5,11 @@ const Transactions = ({items}) => {
     <table className={css.history}>
       <thead className={css.header}>
 <tr>
-<th>Type</th>
-          <th>Amount</th>
+<th className={css.name}>Type</th>
+          <th className={css.name}>Amount</th>
           
-<th>Currency</th>
-</tr>
+<th className={css.name}>Currency</th>
+</tr >
 </thead>
       <tbody className={css.body}>
 {
