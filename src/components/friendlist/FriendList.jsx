@@ -1,18 +1,24 @@
-import friends from './friends.json'
-console.log(friends)
-const Friends = ({avatar, name, isOnline, ids}) =>{
-    return friends.map((el) => (
+
+import css from './FriendList.module.css'
+const FriendList = ({friends}) =>{
+    return (
+        <ul className={css.list} >
+            {
+              friends.map((el) => (
 
 
-        <ul className="friend-list" key={el.id}>
-  <li className="item" >
-            <span className="status">{el.isOnline}</span>
-  <img className="avatar" src={el.avatar} alt="User avatar" width="48" />
-            <p className="name">{el.name}</p>
+ 
+  <li className={css.item} key={el.id}>
+            <span className={css.statu} >{el.isOnline}</span>
+  <img className={css.avatar} src={el.avatar} alt="User avatar" width="48" />
+            <p className={css.name}>{el.name}</p>
 </li>
-</ul>
-  
-))
 
+
+))
+  
+            }
+</ul>
+    )
 }
-export default Friends
+export default FriendList

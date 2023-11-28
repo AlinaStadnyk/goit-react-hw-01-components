@@ -1,0 +1,26 @@
+.history {
+  width: 1000px;
+
+  margin: 0 auto;
+  margin-top: 100px;
+  font-size: 40px;
+  border: 1px solid black;
+}
+.header {
+  color: white;
+  height: 100px;
+  background-color: rgba(0, 255, 255, 0.956);
+}
+.body {
+  border: 1px solid black;
+}
+.item {
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.rowEven {
+  background-color: rgb(243, 240, 231);
+}
