@@ -1,5 +1,5 @@
 import css from './Profile.module.css';
-import styled from 'styled-components';
+
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={css.profile}>
